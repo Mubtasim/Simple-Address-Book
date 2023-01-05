@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Simple Address Book</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Address Book</h1>
+        <div class="main">
+            <div class="contactView">
+                <h2>Contacts</h2>
+                <div class="search">
+                    <input type="text" placeholder="Search" id="searchContact">
+                    <span id="notFound"></span>
+                </div>
+                <ul class="contactList"></ul>
+            </div>
+            <div class="create">
+                <h2>Add Contact</h2>
+                <span id="createMessage"></span>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName">
+                <label for="surName">Surname</label>
+                <input type="text" id="surName">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber">
+                <label for="address">Address</label>
+                <input type="text" id="address">
+                <button class="createButton" id="createButton">Create</button>
+                <button class="resetButton" id="resetButton">Reset</button>
+            </div>
+            <div class="detailDiv" id="detailDiv">
+                <h2>Contact Details</h2>
+                <div id="details"></div>
+                <div class="editArea" id="editArea" style="display:none">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="editFirstName">
+                    <label for="surName">Surname</label>
+                    <input type="text" id="editSurName">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" id="editPhoneNumber">
+                    <label for="address">Address</label>
+                    <input type="text" id="editAddress">
+                    <button class="saveEdit" id="saveEdit">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
